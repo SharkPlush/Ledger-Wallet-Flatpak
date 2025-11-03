@@ -8,6 +8,7 @@ command: run.sh
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --socket=pulseaudio
   - --device=all
   - --share=network
@@ -17,14 +18,16 @@ modules:
     sources:
       - type: git
         url: https://github.com/refi64/zypak
-        tag: v2024.01.17
+        tag: 'v2024.01.17'
 
   - name: ledger-live
     buildsystem: simple
     sources:
       - type: git
         url: https://github.com/LedgerHQ/ledger-live.git
-        tag: '@ledgerhq/live-desktop@2.124.0' # Change this to your desired version
+        
+        @ CHANGE THIS TO YOUR DESIRED VERSION
+        tag: '@ledgerhq/live-desktop@x.xxx.x'
       - type: file
         path: run.sh
         dest-filename: run.sh
@@ -35,9 +38,9 @@ modules:
         path: com.Ledger.LedgerLive.desktop
         dest-filename: com.Ledger.LedgerLive.desktop
       - type: file
-        url: https://github.com/pnpm/pnpm/releases/download/v10.15.0/pnpm-linux-x64
+        url: https://github.com/pnpm/pnpm/releases/download/v9.12.3/pnpm-linux-x64
         dest-filename: pnpm
-        sha256: c9548da52cba52401a8419e1dbc135e2206f74508c18e50ef1ce68e70e7cbf02
+        sha256: 96398b4894ac67f06de76997c0566de0a834238a622c8fcef3b6ade2ec66fb8f
         only-arches:
           - x86_64
     build-options:
@@ -51,9 +54,7 @@ modules:
       - install -Dm755 pnpm /run/build/ledger-live/bin/pnpm
       - pnpm i
       - pnpm release:lld
-
       - cp -r apps/ledger-live-desktop/dist/linux-unpacked/* /app/bin/
-
       - rm /app/bin/LICENSES.chromium.html
       - rm /app/bin/chrome-sandbox
       - rm /app/bin/LICENSE.electron.txt
