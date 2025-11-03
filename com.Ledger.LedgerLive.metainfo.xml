@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.Ledger.LedgerLive</id>
+  <name>Ledger Live</name>
+  <summary>Ledger Live - Desktop</summary>
+  <icon type="stock">com.Ledger.LedgerLive.png</icon>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer_name>LedgerHQ</developer_name>
+  <categories>
+    <category>Office</category>
+    <category>Finance</category>
+  </categories>
+  <description>
+  <p><em>NOTE:</em> This is the official Ledger Live AppImage packaged into a Flatpak by the community. This is NOT affiliated with Ledger.</p>
+  <p>Ledger Live is our platform of apps and services designed specifically for seamless integration with your Ledger device. Acting as a secure gateway to the crypto ecosystem, it allows direct access to a diverse range of crypto, NFT and DeFi services. This integration ensures a safer and more user-friendly experience that address a common security issue known as 'blind signing'.</p>
+  <p>For the Ledger device to be detected you must install the udev rules here: https://support.ledger.com/article/4404389606417-zd</p>
+  </description>
+  <url type="homepage">https://www.ledger.com/</url>
+  <url type="help">https://support.ledger.com/</url>
+  <url type="vcs-browser">https://github.com/LedgerHQ/ledger-live</url>
+  <launchable type="desktop-id">com.Ledger.LedgerLive</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/LedgerHQ/ledger-live/raw/develop/apps/ledger-live-desktop/docs/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+</component>
