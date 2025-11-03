@@ -2,6 +2,8 @@
 
 Not affilated with the Ledger company in anyway.
 
+THIS BRANCH IS FOR A PERSONAL COPY OF THE SOURCE BUILD
+
 Flatpak manifest to build Ledger Live Desktop from source.
 
 WARNING!!
@@ -31,5 +33,3 @@ Or just run.
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 
 Whatever you're comfortable with.
-
-If a genius comes across this and they want to publish it to Flathub go ahead I don't care. I won't because I'm lazy and also I don't want to put people at risk accidentally by publishing it.
