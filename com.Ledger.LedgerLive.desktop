@@ -5,7 +5,5 @@ Terminal=false
 Type=Application
 Icon=com.Ledger.LedgerLive
 StartupWMClass=Ledger Live
-Version=2.124.0
 Comment=Ledger Live - Desktop
 MimeType=x-scheme-handler/ledgerlive;
-Categories=Finance;
