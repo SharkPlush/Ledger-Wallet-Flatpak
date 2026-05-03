@@ -9,6 +9,7 @@ finish-args:
   # No X11 fallback because Ledger errors out when using X11.
   - --socket=wayland
   - --socket=pulseaudio
+  - --socket=fallback-x11
   
   # USB and Bluetooth needed to talk with the Ledger devices.
   # For some reason 'device=all' needs to be set if it's 'device=usb' then the Ledger device won't be seen at least not over USB-C.
@@ -30,8 +31,6 @@ modules:
         
         # Run the AppImage through Collision to get the SHA256 hash.
         sha256: 68cea11ce277665044a130df1f16f7ed6aaac827c725169eaa0d78c3f8d02ef8
-        only-arches: 
-          -x86_64
         dest-filename: ledger-wallet.AppImage
 
       - type: file
@@ -43,7 +42,7 @@ modules:
       - type: file
         path: com.Ledger.Wallet.png
         
-        - type: file
+      - type: file
         path: com.Ledger.Wallet.metainfo.xml
         
     build-commands:
@@ -54,12 +53,11 @@ modules:
       - rm squashfs-root/ledger-live-desktop.desktop
       - rm squashfs-root/AppRun
       - rm squashfs-root/ledger-live-desktop.png
-      - rm squashfs-root/.Diricon
       - rm squashfs-root/chrome-sandbox
       - rm -r squashfs-root/usr/share/
       
       - cp -r squashfs-root/* /app/bin/
       - install -Dm755 run.sh /app/bin/run.sh
       - install -Dm444 com.Ledger.Wallet.png /app/share/icons/hicolor/256x256/apps/com.Ledger.Wallet.png
-      - install -Dm444 com.Ledger.Wallet.metainfo.xml /app/share/metainfo/com.Ledger.Wallet.appdata.xml
+      - install -Dm444 com.Ledger.Wallet.metainfo.xml /app/share/metainfo/com.Ledger.Wallet.metainfo.xml
       - install -Dm444 com.Ledger.Wallet.desktop /app/share/applications/com.Ledger.Wallet.desktop
