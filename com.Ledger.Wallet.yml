@@ -9,7 +9,6 @@ finish-args:
   # No X11 fallback because Ledger errors out when using X11.
   - --socket=wayland
   - --socket=pulseaudio
-  - --socket=fallback-x11
   
   # USB and Bluetooth needed to talk with the Ledger devices.
   # For some reason 'device=all' needs to be set if it's 'device=usb' then the Ledger device won't be seen at least not over USB-C.
