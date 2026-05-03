@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.Ledger.Wallet</id>
+  <name>Ledger Wallet</name>
+  <summary>Manage your cryptocurrency assets with Ledger Wallet</summary>
+  <icon type="stock">com.Ledger.Wallet.png</icon>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer_name>LedgerHQ</developer_name>
+  <categories>
+    <category>Office</category>
+    <category>Finance</category>
+  </categories>
+  
+  <description>
+  <p>NOTE: This is the official Ledger Wallet AppImage packaged into a Flatpak by the community. This is NOT affiliated with Ledger.</p>
+  <p>Ledger Wallet™ lets you build your portfolio: buy, swap, stake, spend* with the simplicity of exchanges & security of a signer.</p>
+  <p>For the Ledger device to be detected over USB you must install the udev rules here under "Linux Installation": https://support.ledger.com/article/4404389606417-zd</p>
+  </description>
+  
+  <url type="homepage">https://www.ledger.com/</url>
+  <url type="help">https://support.ledger.com/</url>
+  <url type="vcs-browser">https://github.com/LedgerHQ/ledger-live</url>
+  <launchable type="desktop-id">com.Ledger.Wallet</launchable>
+  
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/LedgerHQ/ledger-live/raw/develop/apps/ledger-live-desktop/docs/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
+</component>
+
+<releases>
+  <release version="4.0.0" date="2025-04-01">
+    <url type="details">
+      https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.0.0
+    </url>
+    <description>
+      <p>Initial release for Flathub.</p>
+    </description>
+  </release>
+</releases>
