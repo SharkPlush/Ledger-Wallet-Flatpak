@@ -1,4 +1,4 @@
-# Ledger-Live-Flatpak
+# Ledger-Wallet-Flatpak
 
 Not affilated with the Ledger company in anyway.
 
