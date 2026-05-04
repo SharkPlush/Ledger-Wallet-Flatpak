@@ -22,4 +22,4 @@ flatpak run org.flatpak.Builder --force-clean --repo=ledger-wallet-community-fla
 TODO:
 
 1. Stop relying on device=all and find a more secure way to allow the physcial Ledger wallet to communicate over USB.
-2. Wait for Flatpak 1.18 so this gets fixed: https://github.com/flatpak/flatpak/issues/655 and switch to fallback X11 over enabling socket X11.
+2. Wait for Flatpak 1.18 so this gets fixed: https://github.com/flatpak/flatpak/issues/6556 and switch to fallback X11 over enabling socket X11.
