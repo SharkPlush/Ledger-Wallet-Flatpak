@@ -1,6 +1,6 @@
 # Ledger-Wallet-Flatpak
 
-Not affilated with the Ledger company in anyway.
+Not affilated with the Ledger company in anyway. Publishing to Flathub won't happen because they want to a compiled from source build which I refuse to do. If Ledger Wallet appears on Flathub one day this will not longer be maintained.
 
 For your Linux device to see your Ledger via USB check here.
 
@@ -11,3 +11,8 @@ Or just run.
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 
 Whatever you're comfortable with.
+
+To build run:
+```
+flatpak run org.flatpak.Builder --force-clean --repo=ledger-wallet-community-flatpak build-dir com.ledger.wallet.yml
+```
