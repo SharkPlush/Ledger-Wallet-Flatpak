@@ -2,6 +2,10 @@
 
 Not affilated with the Ledger company in anyway. Publishing to Flathub won't happen because they want to a compiled from source build which I refuse to do. If Ledger Wallet appears on Flathub one day this will not longer be maintained.
 
+Publishing to Flathub won't happen because they want to a compiled from source build which I refuse to do. If Ledger Wallet appears on Flathub one day this will not longer be maintained.
+
+Updates will happen once a month unless someone helps me maintain.
+
 For your Linux device to see your Ledger via USB check here.
 
 https://support.ledger.com/article/4404389606417-zd
