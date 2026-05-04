@@ -3,7 +3,6 @@
   <id>com.ledger.wallet</id>
   <name>Ledger Wallet</name>
   <summary>Manage your cryptocurrency assets with Ledger Wallet</summary>
-  <icon type="stock">com.ledger.wallet.png</icon>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
   
@@ -41,7 +40,7 @@
     </screenshot>
     
     <screenshot>
-      <image>https://raw.githubusercontent.com/SharkPlush/Ledger-Wallet-Flatpak/refs/heads/main/screenshots/accounts-page.png</image>
+      <image>https://raw.githubusercontent.com/SharkPlush/Ledger-Wallet-Flatpak/refs/heads/main/screenshots/accounts-page.pngg</image>
       <caption>View your individual cryptocurrency assets.</caption>
     </screenshot>
     
@@ -67,9 +66,6 @@
       <url type="details">
         https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.0.0
       </url>
-      <description>
-        <p>Initial release for Flathub.</p>
-      </description>
     </release>
     
   </releases>

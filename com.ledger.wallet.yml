@@ -6,7 +6,7 @@ base: org.electronjs.Electron2.BaseApp
 base-version: '25.08'
 command: run.sh
 finish-args:
-  # No X11 fallback because Ledger errors out when using X11.
+  - --socket=x11
   - --socket=wayland
   - --socket=pulseaudio
   
@@ -19,35 +19,25 @@ finish-args:
   - --share=network
 
 modules:
-  - name: zypak
-    sources:
-      - type: git
-        url: https://github.com/refi64/zypak
-        tag: v2025.09
-        
   - name: ledger-wallet
     buildsystem: simple
     sources:
       - type: file
-      
-        # Always grabs the latest.
         url: https://download.live.ledger.com/latest/linux
-        
-        # Run the AppImage through Collision to get the SHA256 hash.
         sha256: 68cea11ce277665044a130df1f16f7ed6aaac827c725169eaa0d78c3f8d02ef8
         dest-filename: ledger-wallet.AppImage
+		
+	  - type: file
+	    path: com.ledger.wallet.png
+	    
+	  - type: file
+	    path: com.ledger.wallet.metainfo.xml
+	    
+	  - type:
+	    path: com.ledger.wallet.desktop
 
       - type: file
         path: run.sh
-
-      - type: file
-        path: com.ledger.wallet.desktop
-
-      - type: file
-        path: com.ledger.wallet.png
-        
-      - type: file
-        path: com.ledger.wallet.metainfo.xml
         
     build-commands:
       - chmod +x ledger-wallet.AppImage
