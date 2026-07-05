@@ -67,10 +67,16 @@
         https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.0.0
       </url>
     </release>
-    
+
     <release version="4.6.0" date="2026-05-28">
       <url type="details">
         https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.6.0
+      </url>
+    </release>
+
+    <release version="4.10.0" date="2026-06-30">
+      <url type="details">
+        https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.10.0
       </url>
     </release>
     
