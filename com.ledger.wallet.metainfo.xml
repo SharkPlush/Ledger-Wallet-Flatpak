@@ -80,6 +80,12 @@
       </url>
     </release>
     
+    <release version="4.13.1" date="2026-07-29">
+      <url type="details">
+        https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.13.1
+      </url>
+    </release>
+    
   </releases>
   
 </component>
