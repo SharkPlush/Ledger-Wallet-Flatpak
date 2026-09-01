@@ -24,7 +24,7 @@ modules:
     sources:
       - type: file
         url: https://download.live.ledger.com/latest/linux
-        sha256: d2772b61341688524809aa2f37488cb34a451c55223a361c519a2c7ad4b6af86
+        sha256: eb0cfaa3b1d7edc469ea70bf71387915d2cdb8351d8e6873b6cd3ea9e74ffde6
         dest-filename: ledger-wallet.AppImage
 
       - type: file
