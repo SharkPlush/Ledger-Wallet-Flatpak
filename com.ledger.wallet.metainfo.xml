@@ -91,6 +91,12 @@
         https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.18.0
       </url>
     </release>
+
+    <release version="4.24.0" date="2026-09-14">
+      <url type="details">
+        https://github.com/LedgerHQ/ledger-live/releases/tag/%40ledgerhq%2Flive-desktop%404.24.0
+      </url>
+    </release>
     
   </releases>
   
